@@ -1,7 +1,0 @@
-2022-03-28 18:03:32.7185 Info Message Template Auto Format enabled
-2022-03-28 18:03:32.7743 Info Loading assembly: NLog.Web.AspNetCore
-2022-03-28 18:03:32.8776 Info Adding target FileTarget(Name=allfile)
-2022-03-28 18:03:32.8776 Info Adding target FileTarget(Name=ownFile-web)
-2022-03-28 18:03:32.9393 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=D:\GitHub\awing-sample-webhook\bin\Debug\netcoreapp3.1\NLog.config
-2022-03-28 18:03:32.9862 Info Configuration initialized.
-2022-03-28 18:03:32.9862 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.2.11786. Product version: 4.7.2+024896f64b840a743d3fd89e29c2186681e7795f. GlobalAssemblyCache: False

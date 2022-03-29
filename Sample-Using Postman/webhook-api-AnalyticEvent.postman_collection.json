@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "56e93986-d861-4114-9e73-60904df2a282",
+		"name": "webhook-api-AnalyticEvent",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/Analytic/Event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"{\\\"EventLabel\\\":\\\"eventlabel\\\",\\\"EventObject\\\":\\\"{\\\\\\\"Phone\\\\\\\":\\\\\\\"0978888888\\\\\\\",\\\\\\\"Name\\\\\\\":\\\\\\\"AWING\\\\\\\"}\\\",\\\"PlaceId\\\":\\\"01\\\",\\\"DomainId\\\":\\\"01\\\",\\\"PageId\\\":\\\"0\\\",\\\"CampaignId\\\":\\\"01\\\",\\\"MacAddress\\\":\\\"MacAddress\\\",\\\"ApMac\\\":\\\"ApMac\\\",\\\"SessionId\\\":\\\"SessionId\\\",\\\"CreatedDate\\\":{\\\"Seconds\\\":\\\"1634550438\\\",\\\"Nanos\\\":173029600}}\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{domain_dev}}/Analytic/Event",
+					"protocol": "http",
+					"host": [
+						"{{domain_dev}}"
+					],
+					"path": [
+						"Analytic",
+						"Event"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

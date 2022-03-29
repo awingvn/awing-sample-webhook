@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "11aa862d-0292-4203-925f-15a9612ae4c9",
+		"name": "webhook-api-AnalyticView",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/Analytic/View",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"{\\\"PlaceId\\\":\\\"01\\\",\\\"DomainId\\\":\\\"02\\\",\\\"CampaignId\\\":\\\"03\\\",\\\"CampaignType\\\":\\\"Default\\\",\\\"MacAddress\\\":\\\"MacAddress8\\\",\\\"ApMac\\\":\\\"B4-C7-99-6B-9A-64\\\",\\\"PageCode\\\":\\\"login\\\",\\\"SessionId\\\":\\\"SessionId\\\",\\\"Url\\\":\\\"Url\\\",\\\"UserAgent\\\":\\\"UserAgent\\\",\\\"CreatedDate\\\":{\\\"Seconds\\\":\\\"1634553800\\\",\\\"Nanos\\\":233936600}}\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{domain_dev}}/Analytic/View",
+					"protocol": "http",
+					"host": [
+						"{{domain_dev}}"
+					],
+					"path": [
+						"Analytic",
+						"View"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

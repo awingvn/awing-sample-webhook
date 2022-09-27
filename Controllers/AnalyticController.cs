@@ -16,17 +16,15 @@ namespace WebhookTestAPI.Controllers
             _logger = logger;
         }
         [HttpPost("View")]
-        public  IActionResult View([FromBody] string data)
+        public  IActionResult View([FromBody] AnalyticView analyticView)
         {
-            var analyticView = JsonConvert.DeserializeObject<AnalyticView>(data);
             _logger.LogInformation("AnalyticView", analyticView);
             return Ok("ok");
         }
 
         [HttpPost("Event")]
-        public IActionResult Event([FromBody] string data)
+        public IActionResult Event([FromBody] AnalyticEvent analyticEvent)
         {
-            var analyticEvent = JsonConvert.DeserializeObject<AnalyticEvent>(data);
             _logger.LogInformation("AnalyticEvent", analyticEvent);
             return Ok("ok");
         }
